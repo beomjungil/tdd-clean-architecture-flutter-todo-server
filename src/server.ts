@@ -18,6 +18,8 @@ mongoose.Promise = Promise;
         autoReconnect: true,
         reconnectTries: Number.MAX_VALUE,
         reconnectInterval: 1000,
+        useNewUrlParser: true,
+        useUnifiedTopology: true,
     };
 
     mongoose.connect(dburi, mongooseOpts);
