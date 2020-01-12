@@ -2,7 +2,7 @@ import mongoose from 'mongoose';
 
 const todoSchema = new mongoose.Schema(
     {
-        title: { type: String, required: true },
+        name: { type: String, required: true },
         isFinished: { type: Boolean, default: false }
     },
     {
