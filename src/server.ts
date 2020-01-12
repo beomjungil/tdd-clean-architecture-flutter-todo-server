@@ -1,7 +1,7 @@
 import Express from 'express';
 
 const app = Express();
-const port = process.env.port || 3000;
+const port = process.env.PORT || 3000;
 
 app.use("*", (req, res) =>{res.send("<h1>Testing server</h1>")})
 
